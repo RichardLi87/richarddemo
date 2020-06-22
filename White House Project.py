@@ -44,3 +44,14 @@ source_counter_2021 = Counter()
 source_counter_2019 = Counter()
 source_counter_2018 = Counter()
 source_counter_2017 = Counter()
+
+plt.style.use('seaborn')
+
+for i_2021 in df.loc[filt_2020,'Source']:
+    source_counter_2021.update(i_2021.split(';'))
+department_2021 = []
+amount_2021 = []
+for a in source_counter_2021.keys():
+    department_2021.append(a)
+for b in source_counter_2021.values():
+    amount_2021.append(b)

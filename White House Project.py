@@ -39,3 +39,8 @@ ret_2019[6].set_color('b')
 ret_2019[9].set_color('b')
 ret_2019[10].set_color('b')
 ret_2019[12].set_color('b')
+
+source_counter_2021 = Counter()
+source_counter_2019 = Counter()
+source_counter_2018 = Counter()
+source_counter_2017 = Counter()
